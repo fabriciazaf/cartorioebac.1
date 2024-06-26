@@ -123,7 +123,7 @@ int main()
     for(laco=1;laco=1;)
     {
 
-     system("cls"); //responsável por limpar a tela
+    system("cls"); //responsável por limpar a tela
      
     setlocale(LC_ALL, "Portuguese"); // início do menu.
   
@@ -131,9 +131,10 @@ int main()
     printf("Escolha a opção desejada no menu:\n\n"); 
     printf("\t1 - Registrar nomes\n");
     printf("\t2 - Consultar nomes\n");
-    printf("\t3 - Deletar nomes\n\n"); // fim o menu.
+    printf("\t3 - Deletar nomes\n\n"); 
+	printf("\t4 - sair do sistema");  // fim o menu.
   
-    scanf("%d" , &opcao); // armazenando a aescolha do usuário.
+    scanf("%d" , &opcao); // armazenando a escolha do usuário.
   
     system("cls");
   
@@ -150,6 +151,11 @@ int main()
       case 3:
        deletar();
        break;
+       
+       case 4:
+       	printf("Obrigado por utilizar o sistema!\n");
+       	return 0;
+       	break;
        
        default:          
        printf("Essa opção não éstá disponível.\n"); 
